@@ -10,6 +10,7 @@ export default defineConfig({
   plugins: [tsconfigPaths(), react(), macrosPlugin()],
   // define: { 'process.env': process.env },
   build: {
+    outDir: 'build',
     minify: 'terser',
     rollupOptions: {
       plugins: [
